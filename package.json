@@ -1,0 +1,18 @@
+{
+  "name": "javascript_asincrono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "asincronismo"
+  ],
+  "author": "Victor Alejandro Diaz Jauregui \"victor.diaz.jauregui@mi.unc.edu.ar\"",
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
