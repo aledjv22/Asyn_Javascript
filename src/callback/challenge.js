@@ -15,8 +15,12 @@ function fetchData(urlApi, callback) {
         if(xhttp.readyState === 4){ //El 4 significa que se ha completado la llamada.
             if(xhttp.status === 200){ //El 200 significa que la solicitud fue correcta
                 //me quede minuto 2 en clase 8
+                callback(null, JSON.parse(xhttp.responseText));
             }
+        }else {
+            const error = new Error('Error' + urlApi);
+            return callback(error, null);
         }
-
+        xhttp.send();
     }
 }
